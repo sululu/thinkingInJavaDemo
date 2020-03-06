@@ -2,18 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4d9d3250-a98f-44b4-9267-8b8d53c61ae9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/containers/CanonicalMapping.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/containers/CountedString.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/containers/Groundhog2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/containers/References.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/containers/SimpleHashMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/containers/SlowMap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/containers/SpringDetector2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/containers/StringHashCode.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/containers/Utilities.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/typeinfo/pets/Individual.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/containers/FailFast.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/containers/IteratorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/containers/ListSortSearch.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/containers/ReadOnly.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/containers/Synchronization.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/containers/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/containers/Test2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/containers/SpringDetector.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/containers/SpringDetector.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -45,19 +41,99 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.txt">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+            <state relative-caret-position="81">
+              <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/containers/Utilities.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/containers/Test2.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="10" column="62" lean-forward="true" selection-start-line="10" selection-start-column="62" selection-end-line="10" selection-end-column="62" />
+            <state relative-caret-position="441">
+              <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
               <folding>
-                <element signature="e#2189#2197#0" expanded="true" />
+                <element signature="imports" expanded="true" />
+                <element signature="e#169#170#0" expanded="true" />
+                <element signature="e#195#196#0" expanded="true" />
+                <element signature="e#528#544#0" expanded="true" />
+                <element signature="e#1128#1129#0" expanded="true" />
+                <element signature="e#1147#1148#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/containers/Test.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="77">
+              <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#213#229#0" expanded="true" />
+                <element signature="e#709#710#0" expanded="true" />
+                <element signature="e#731#732#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/containers/IteratorTest.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="513">
+              <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#212#220#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/containers/FailFast.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#191#199#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/containers/Synchronization.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="221">
+              <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/containers/ReadOnly.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="254">
+              <caret line="24" column="126" selection-start-line="24" selection-start-column="126" selection-end-line="24" selection-end-column="126" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#153#161#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/containers/ListSortSearch.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="81">
+              <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+              <folding>
+                <element signature="e#188#196#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -66,20 +142,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/containers/CanonicalMapping.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="945">
+            <state relative-caret-position="27">
               <caret line="35" column="57" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/containers/References.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -87,23 +151,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/containers/CountedString.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1161">
+            <state relative-caret-position="40">
               <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/typeinfo/pets/Individual.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1107">
-              <caret line="43" column="39" selection-start-line="43" selection-start-column="36" selection-end-line="43" selection-end-column="39" />
-              <folding>
-                <element signature="e#221#222#0" expanded="true" />
-                <element signature="e#253#254#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -163,15 +214,22 @@
         <option value="$PROJECT_DIR$/src/main/java/containers/References.java" />
         <option value="$PROJECT_DIR$/src/main/java/containers/CanonicalMapping.java" />
         <option value="$PROJECT_DIR$/src/main/java/containers/Utilities.java" />
+        <option value="$PROJECT_DIR$/src/main/java/containers/ListSortSearch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/containers/ReadOnly.java" />
+        <option value="$PROJECT_DIR$/src/main/java/containers/Synchronization.java" />
+        <option value="$PROJECT_DIR$/src/main/java/containers/FailFast.java" />
+        <option value="$PROJECT_DIR$/src/main/java/containers/IteratorTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/containers/Test.java" />
+        <option value="$PROJECT_DIR$/src/main/java/containers/Test2.java" />
         <option value="$PROJECT_DIR$/test.txt" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="1">
-    <option name="x" value="-65" />
-    <option name="y" value="519" />
+    <option name="x" value="-436" />
+    <option name="y" value="629" />
     <option name="width" value="1842" />
-    <option name="height" value="753" />
+    <option name="height" value="518" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -220,7 +278,25 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="CanonicalMapping.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
               <item name="References.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
+            </path>
+            <path>
+              <item name="demo" type="b2602c69:ProjectViewProjectNode" />
+              <item name="demo" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="containers" type="462c0819:PsiDirectoryNode" />
+              <item name="Test2.java" type="529ef68f:ClassesTreeStructureProvider$PsiClassOwnerTreeNode" />
             </path>
             <path>
               <item name="demo" type="b2602c69:ProjectViewProjectNode" />
@@ -287,7 +363,7 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1583453943333" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1583482549195" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="nodejs_package_manager_path" value="npm" />
@@ -307,9 +383,9 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.Utilities">
-    <configuration name="CanonicalMapping" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="containers.CanonicalMapping" />
+  <component name="RunManager" selected="Application.Test2">
+    <configuration name="FailFast" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="containers.FailFast" />
       <module name="demo" />
       <extension name="coverage">
         <pattern>
@@ -321,8 +397,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CountedString" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="containers.CountedString" />
+    <configuration name="IteratorTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="containers.IteratorTest" />
       <module name="demo" />
       <extension name="coverage">
         <pattern>
@@ -334,8 +410,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="References" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="containers.References" />
+    <configuration name="ReadOnly" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="containers.ReadOnly" />
       <module name="demo" />
       <extension name="coverage">
         <pattern>
@@ -347,8 +423,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StringHashCode" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="containers.StringHashCode" />
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="containers.Test" />
       <module name="demo" />
       <extension name="coverage">
         <pattern>
@@ -360,8 +436,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Utilities" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="containers.Utilities" />
+    <configuration name="Test2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="containers.Test2" />
       <module name="demo" />
       <extension name="coverage">
         <pattern>
@@ -375,11 +451,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Utilities" />
-        <item itemvalue="Application.CanonicalMapping" />
-        <item itemvalue="Application.References" />
-        <item itemvalue="Application.CountedString" />
-        <item itemvalue="Application.StringHashCode" />
+        <item itemvalue="Application.Test2" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.IteratorTest" />
+        <item itemvalue="Application.FailFast" />
+        <item itemvalue="Application.ReadOnly" />
       </list>
     </recent_temporary>
   </component>
@@ -408,19 +484,19 @@
       <workItem from="1583289285777" duration="12000" />
       <workItem from="1583289306933" duration="15537000" />
       <workItem from="1583370252970" duration="24048000" />
-      <workItem from="1583449466923" duration="3134000" />
+      <workItem from="1583449466923" duration="22456000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65025000" />
+    <option name="totallyTimeSpent" value="84347000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-65" y="519" width="1842" height="753" extended-state="0" />
+    <frame x="-96" y="465" width="1842" height="518" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.7770115" visible="true" weight="0.23288439" />
-      <window_info id="Structure" order="1" sideWeight="0.2229885" side_tool="true" visible="true" weight="0.23288439" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.77662337" visible="true" weight="0.23288439" />
+      <window_info id="Structure" order="1" sideWeight="0.22337662" side_tool="true" visible="true" weight="0.23288439" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
       <window_info id="UI Designer" order="4" />
@@ -428,7 +504,7 @@
       <window_info id="Favorites" order="6" sideWeight="0.50080776" side_tool="true" weight="0.19989339" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2983871" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5569948" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.8876405" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -438,7 +514,7 @@
       <window_info anchor="bottom" id="Database Changes" order="9" />
       <window_info anchor="bottom" id="Terminal" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.30444205" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.29685807" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -802,16 +878,6 @@
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://D:/tool/Java/jdk1.8.0_231/src.zip!/java/util/LinkedList.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-181">
-          <caret line="89" column="29" lean-forward="true" selection-start-line="89" selection-start-column="29" selection-end-line="89" selection-end-column="29" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
     <entry file="jar://D:/tool/Java/jdk1.8.0_231/src.zip!/java/util/HashMap.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-70">
@@ -1176,27 +1242,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/containers/CanonicalMapping.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="945">
-          <caret line="35" column="57" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/containers/References.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="13" column="5" selection-start-line="13" selection-start-column="5" selection-end-line="13" selection-end-column="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/containers/CountedString.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1161">
-          <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1224,10 +1273,105 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/containers/CountedString.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="40">
+          <caret line="46" column="38" selection-start-line="46" selection-start-column="38" selection-end-line="46" selection-end-column="38" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/containers/CanonicalMapping.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="27">
+          <caret line="35" column="57" selection-start-line="35" selection-start-column="57" selection-end-line="35" selection-end-column="57" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/containers/IteratorTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="513">
+          <caret line="19" column="17" selection-start-line="19" selection-start-column="17" selection-end-line="19" selection-end-column="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#212#220#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/containers/FailFast.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="15" column="34" selection-start-line="15" selection-start-column="34" selection-end-line="15" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#191#199#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/containers/Synchronization.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="14" lean-forward="true" selection-start-line="14" selection-end-line="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/containers/ReadOnly.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="254">
+          <caret line="24" column="126" selection-start-line="24" selection-start-column="126" selection-end-line="24" selection-end-column="126" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#153#161#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/containers/ListSortSearch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="3" lean-forward="true" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#188#196#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/containers/Test.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="77">
+          <caret line="22" column="16" selection-start-line="22" selection-start-column="16" selection-end-line="22" selection-end-column="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#213#229#0" expanded="true" />
+            <element signature="e#709#710#0" expanded="true" />
+            <element signature="e#731#732#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/containers/Test2.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="441">
+          <caret line="42" column="22" selection-start-line="42" selection-start-column="22" selection-end-line="42" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#169#170#0" expanded="true" />
+            <element signature="e#195#196#0" expanded="true" />
+            <element signature="e#528#544#0" expanded="true" />
+            <element signature="e#1128#1129#0" expanded="true" />
+            <element signature="e#1147#1148#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/test.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="1" lean-forward="true" selection-start-line="1" selection-end-line="1" />
+        <state relative-caret-position="81">
+          <caret line="2" lean-forward="true" selection-start-line="2" selection-end-line="2" />
         </state>
       </provider>
     </entry>
