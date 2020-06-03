@@ -1,96 +1,64 @@
 package netty.groupchat;
 
-import java.io.IOException;
-import java.net.InetSocketAddress;
-import java.nio.ByteBuffer;
-import java.nio.channels.SelectionKey;
-import java.nio.channels.Selector;
-import java.nio.channels.SocketChannel;
+import io.netty.bootstrap.Bootstrap;
+import io.netty.channel.Channel;
+import io.netty.channel.ChannelFuture;
+import io.netty.channel.ChannelInitializer;
+import io.netty.channel.ChannelPipeline;
+import io.netty.channel.nio.NioEventLoopGroup;
+import io.netty.channel.socket.SocketChannel;
+import io.netty.channel.socket.nio.NioSocketChannel;
+import io.netty.handler.codec.string.StringDecoder;
+import io.netty.handler.codec.string.StringEncoder;
+
 import java.util.Scanner;
-import java.util.Set;
-import java.util.concurrent.TimeUnit;
 
 public class GroupChatClient {
-    private SocketChannel socketChannel;
-    private Selector selector;
-    private static final String HOST = "127.0.0.1";
-    private static final int PORT = 6667;
-    private String username;
+    //属性
+    private final String host;
+    private final int port;
 
-    public GroupChatClient() {
+    public GroupChatClient(String host, int port){
+        this.host = host;
+        this.port = port;
+    }
+
+    public void run() throws Exception{
+        NioEventLoopGroup group = new NioEventLoopGroup();
         try{
-            socketChannel = SocketChannel.open(  );
-            InetSocketAddress inetSocketAddress = new InetSocketAddress( HOST, PORT );
-            socketChannel.connect( inetSocketAddress );
-            socketChannel.configureBlocking( false );
+            Bootstrap bootstrap = new Bootstrap();
+            bootstrap.group( group )
+                    .channel( NioSocketChannel.class )
+                    .handler( new ChannelInitializer<SocketChannel>() {
+                        @Override
+                        protected void initChannel(SocketChannel socketChannel) throws Exception {
+                            //得到pipeline
+                            ChannelPipeline pipeline = socketChannel.pipeline();
+                            //加入相关的handler
+                            pipeline.addLast( new StringDecoder(  ) );
+                            pipeline.addLast( new StringEncoder(  ) );
+                            pipeline.addLast( new GroupChatClientHandler() );
+                        }
+                    } );
 
-            selector = Selector.open();
-            socketChannel.register( selector , SelectionKey.OP_READ );
 
-            username = socketChannel.getLocalAddress().toString().substring( 1 );
-
-            System.out.println(username + " is ok");
-
-
-
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-    }
-
-    public void sendInfo(String info){
-            info = username + "说：" + info;
-        try {
-            socketChannel.write( ByteBuffer.wrap( info.getBytes() ) );
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
-
-    public void readInfo(){
-        ByteBuffer buffer = ByteBuffer.allocate( 1024 );
-        try {
-            int num = selector.select(2000);
-            if(num > 0){
-                Set<SelectionKey> selectionKeys = selector.selectedKeys();
-                for(SelectionKey key:selectionKeys){
-                   if(key.isReadable()){
-                       SocketChannel channel = (SocketChannel) key.channel();
-                       int cnt = channel.read( buffer );
-                       if(cnt > 0){
-                           System.out.println(new String(buffer.array()));
-                           buffer.clear();
-                       }
-                   }
-                   selectionKeys.remove( key );
-                }
-            }else{
-
+            ChannelFuture future = bootstrap.connect( host, port ).sync();
+            Channel channel = future.channel();
+            System.out.println("---- " + channel.localAddress() + " ----");
+            //客户端需要输入信息，创建一个扫描器
+            Scanner scanner = new Scanner( System.in );
+            while(scanner.hasNextLine()){
+                String msg = scanner.nextLine();
+                //通过channel发送到服务器端
+                channel.writeAndFlush( msg );
             }
-        } catch (IOException e) {
-            e.printStackTrace();
+            future.channel().closeFuture().sync();
+        }finally {
+            group.shutdownGracefully();
         }
     }
 
-    public static void main(String[] args) {
-        GroupChatClient chatClient = new GroupChatClient();
-        new Thread(  ){
-            @Override
-            public void run() {
-                while(true){
-                    chatClient.readInfo();
-                    try{
-                        TimeUnit.MILLISECONDS.sleep( 3000 );
-                    }catch(InterruptedException e){
-                        e.printStackTrace();
-                    }
-                }
-            }
-        }.start();
-        Scanner scanner = new Scanner( System.in );
-        while(scanner.hasNext()){
-            String s = scanner.nextLine();
-            chatClient.sendInfo( s );
-        }
+    public static void main(String[] args) throws Exception{
+        new GroupChatClient( "localhost", 7000 ).run();
     }
 }
